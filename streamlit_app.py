@@ -54,7 +54,7 @@ wellness_topics=[
 ]
 
 streamlit.title("Daily Wellness Tips")
-streamlit.write("Made by AI")
+streamlit.write("*Made by AI* \n")
 
 for i in range(0, 5):
     response = client.responses.create(
