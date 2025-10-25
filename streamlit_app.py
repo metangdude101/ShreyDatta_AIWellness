@@ -54,13 +54,15 @@ wellness_topics=[
 ]
 
 streamlit.title("Daily Wellness Tips")
+streamlit.write("Made by AI")
 
-response = client.responses.create(
-    model="gpt-5-nano",
-    input="Write a one-sentence wellness tip about " + random.choice(wellness_topics)
-)
-
-print(response.output_text)
-
-streamlit.write(response.output_text)
-
+for i in range(0, 5):
+    response = client.responses.create(
+        model="gpt-5-nano",
+        input="Write a one-sentence wellness tip about " + random.choice(wellness_topics)
+    )
+    
+    print(response.output_text)
+    
+    streamlit.write(response.output_text)
+    
