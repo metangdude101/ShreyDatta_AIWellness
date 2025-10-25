@@ -60,3 +60,5 @@ response = client.responses.create(
 
 print(response.output_text)
 
+streamlit.write(response.output_text)
+
