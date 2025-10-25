@@ -62,5 +62,5 @@ response = client.responses.create(
 
 print(response.output_text)
 
-streamlit.write(response.output_text + " *By AI.*")
+streamlit.write(response.output_text)
 
