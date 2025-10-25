@@ -53,6 +53,8 @@ wellness_topics=[
 
 ]
 
+streamlit.title("Daily Wellness Tips")
+
 response = client.responses.create(
     model="gpt-5-nano",
     input="Write a one-sentence wellness tip about " + random.choice(wellness_topics)
