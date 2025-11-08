@@ -52,10 +52,11 @@ const wellness_topics = [
 
 var topicindex = Math.floor(Math.random() * wellness_topics.length)
 
-const response = await client.responses.create({
+const airesponse = await client.responses.create({
     model: "gpt-5",
     input: "Write a one-sentence wellness tip about " + wellness_topics[topicindex]
 });
 
 
-console.log(response.output_text);
+console.log(airesponse.output_text);
+
