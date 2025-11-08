@@ -1,6 +1,6 @@
-import OpenAI from "https://api.openai.com/v1/completions";
+//import OpenAI from "https://api.openai.com/v1/completions";
 
-const client = new OpenAI();
+//const client = new OpenAI();
 
 const response = await fetch('https://ai-messenger.shreydatta6.workers.dev/');
 const data = await response.text(); // Or .text() if the Worker returns plain text
@@ -50,7 +50,7 @@ const wellness_topics = [
     "Negative side effects of stress"
 ];
 
-var topicindex = Math.floor(Math.random() * wellness_topics.length)
+/*var topicindex = Math.floor(Math.random() * wellness_topics.length)
 
 const airesponse = await client.responses.create({
     model: "gpt-5",
@@ -58,5 +58,6 @@ const airesponse = await client.responses.create({
 });
 
 
-console.log(airesponse.output_text);
+console.log(airesponse.output_text);*/
+
 
