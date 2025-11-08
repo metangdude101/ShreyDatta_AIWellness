@@ -2,6 +2,10 @@ import OpenAI from "https://api.openai.com/v1/completions";
 
 const client = new OpenAI();
 
+const response = await fetch('https://ai-messenger.shreydatta6.workers.dev/');
+const data = await response.text(); // Or .text() if the Worker returns plain text
+console.log(data)
+
 const wellness_topics = [
     "Having a positive outlook",
     "Spending less time with negative influences",
@@ -52,5 +56,6 @@ const response = await client.responses.create({
     model: "gpt-5",
     input: "Write a one-sentence wellness tip about " + wellness_topics[topicindex]
 });
+
 
 console.log(response.output_text);
