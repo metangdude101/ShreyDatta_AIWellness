@@ -6,5 +6,6 @@ const header = document.getElementById("header")
 header.innerHTML = "HELLO!"
 
 const boxes = document.getElementsByClassName("box")
-box[0].innerHTML = data
+boxes[0].innerHTML = data
+
 
