@@ -4,3 +4,6 @@ console.log(data)
 
 const header = document.getElementById("header")
 header.innerHTML = "HELLO!"
+
+const boxes = document.getElementsByClass("box")
+box[0].innerHTML = data
