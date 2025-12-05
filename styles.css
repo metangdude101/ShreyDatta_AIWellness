@@ -71,7 +71,7 @@ body {
     to  {transform: scale(2)}
 }
 
-.box::hover {
+.box:hover {
     animation-name: boxHover;
     animation-duration: 1s;
 }
@@ -81,3 +81,4 @@ body {
     color: var(--box);
 
 }
+
