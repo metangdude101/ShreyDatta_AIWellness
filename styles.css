@@ -64,16 +64,18 @@ body {
     margin-right: 1vw;
     margin-left: 1vw;
     padding: 2vw;
+    transform: scale(1);
 }
 
 @keyframes boxHover {
     from {transform: scale(1)}
-    to  {transform: scale(2)}
+    to  {transform: scale(1.1)}
 }
 
 .box:hover {
     animation-name: boxHover;
     animation-duration: 1s;
+    transform: scale(1.1);
 }
 
 ::selection {
@@ -81,4 +83,5 @@ body {
     color: var(--box);
 
 }
+
 
