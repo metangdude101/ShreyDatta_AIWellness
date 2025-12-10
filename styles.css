@@ -65,6 +65,7 @@ body {
     margin-left: 1vw;
     padding: 2vw;
     transform: scale(1);
+    transition-duration: 1s;
 }
 
 @keyframes boxHover {
@@ -73,8 +74,6 @@ body {
 }
 
 .box:hover {
-    animation-name: boxHover;
-    animation-duration: 1s;
     transform: scale(1.1);
 }
 
@@ -83,5 +82,6 @@ body {
     color: var(--box);
 
 }
+
 
 
