@@ -83,5 +83,31 @@ body {
 
 }
 
+.link {
+    color: var(--text);
+    background-color: var(--box);
+    padding: 10px;
+}
 
+a {
+    color: var(--text);
+}
 
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%
+}
+
+table, th, td {
+    border: 2px solid var(--box);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
